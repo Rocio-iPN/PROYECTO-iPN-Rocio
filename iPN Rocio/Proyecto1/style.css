@@ -1,0 +1,62 @@
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    padding: 0 15rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
+    position: relative;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    display: flex;
+}
+nav a{
+    padding-right: 20px;
+}
+nav a:hover{
+    color: #506690;
+}
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.hamburger {
+    display: none; 
+    font-size: 25px;
+    cursor: pointer;
+    color: #506690; 
+    padding: 10px;
+}
+@media (max-width: 700px){
+    header{
+        justify-content: space-between;
+    }
+    nav{
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
+        background-color: white;
+        position: absolute; 
+        top: 100%;
+        left: 0;
+        z-index: 1;
+    }
+    nav.open {
+        display: flex;
+    }
+    nav a{  
+        padding: 10px 0;
+    }
+    .hamburger {
+        display: block; 
+    }
+}
