@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>proyecto1</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <header>
+                <img src="logo_iPN.svg" alt="logo de iPN">
+                <div class="hamburger" id="hamburger">&#9776;</div>
+                <nav id="nav">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="#" class="nav-link">Acceder</a>
+                </nav>
+        </header>
+        <div class="filter-container">
+            <h2>Filtros</h2>
+            <label for="id">ID</label>
+            <input type="text" id="id" placeholder="Buscar por ID">
+    <div class="input-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Buscar por nombre">
+    </div>
+    <div class="input-group">
+        <label for="categoria">Categoría</label>
+        <select id="categoria">
+            <option value="">Selecciona la categoría</option>
+            <option value="electronica">Electrónica</option>
+            <option value="ropamj">Ropa Mujer</option>
+            <option value="ropahb">Ropa Hombre</option>
+            <option value="hogar">Hogar</option>
+            <option value="juguetes">Juguetes</option>
+            <option value="otros">Otros</option>
+        </select>
+    </div>
+    <div class="input-group">
+        <label for="tipo">Tipo</label>
+        <select id="tipo">
+            <option value="producto">Producto</option>
+            <option value="articulo">Artículo</option>
+        </select>
+    </div>
+    <button onclick="aplicarFiltros()">Aplicar Filtros</button>
+</div>
+</div>
+        <table id="product-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Tipo</th>
+                    <th>Categoria</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td><a href="detailUI.html">Camisa de algodon</a></td>
+                    <td>Producto</td>
+                    <td>Ropa mujer</td>
+                    <td>$1.500</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td><a href="detailUI.html">Peluche oso</a></td>
+                    <td>Articulo</td>
+                    <td>Juguetes</td>
+                    <td>$3.000</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td><a href="detailUI.html">Cargador tipo C</a></td>
+                    <td>Articulo</td>
+                    <td>Otros</td>
+                    <td>$4.000</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td><a href="detailUI.html">Pantalone Holgados</a></td>
+                    <td>Producto</td>
+                    <td>Ropa hombre</td>
+                    <td>$10.000</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="button" onclick="exportTableToExcel()">Descargar en Excel</button>
+    <script src="script.js"></script>
+    
+    </body>
+</html>
