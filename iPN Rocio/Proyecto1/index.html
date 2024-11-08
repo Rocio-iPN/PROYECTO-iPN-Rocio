@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Listado</title>
+        <title>proyecto1</title>
         <link rel="stylesheet" href="style.css"> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,10 +15,46 @@
                 <div class="hamburger" id="hamburger">&#9776;</div>
             <nav id="nav">
                 <a href="" class="nav-link">Inicio</a>
-                <a href="" class="nav-link">Carrito</a>
                 <a href="" class="nav-link">Acceder</a>
             </nav>
         </header>
+        <table id="product-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Tipo</th>
+                    <th>Categoria</th>
+                    <th>Precio</th>
+                    <th>Detalles</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr contenteditable="true">
+                    <td></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td><a href="detailUI.html">hoa</a></td>
+                </tr>
+                <tr contenteditable="true">
+                    <td></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td><a href="detailUI.html">hoa</a></td>
+                </tr>
+                <tr contenteditable="true">
+                    <td></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td><a href="detailUI.html">hoa</a></td>
+                </tr>
     <script src="script.js"></script>
+    <button class="button" onclick="exportTableToExcel()">Descargar en Excel</button>
     </body>
 </html>

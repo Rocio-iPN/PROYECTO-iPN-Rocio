@@ -6,3 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
         nav.classList.toggle('open');
     });
 });
+function downloadExcel() {
+    const table = document.getElementById("product-table");
+    const workbook = XLSX.utils.table_to_book(table, {sheet: "Listado"});
+    XLSX.writeFile(workbook, "listado_compras.xlsx");
+}
