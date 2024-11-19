@@ -13,11 +13,48 @@
         <header>
                 <img src="logo_iPN.svg" alt="logo de iPN">
                 <div class="hamburger" id="hamburger">&#9776;</div>
-            <nav id="nav">
-                <a href="" class="nav-link">Inicio</a>
-                <a href="" class="nav-link">Acceder</a>
-            </nav>
+                <nav id="nav">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="#" class="nav-link">Acceder</a>
+                </nav>
         </header>
+        <div class="filter-container">
+            <h2>Filtros</h2>
+        <div class="input-group">
+            <label for="id">ID</label>
+            <input type="number" id="id" placeholder="Buscar por ID">
+        </div>
+        <div class="input-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Buscar por nombre">
+        </div>
+        <div class="input-group">
+            <label for="id">Precio</label>
+            <input type="number" id="precio" placeholder="Rango de precio">
+        </div>
+        <div class="input-group">
+            <label for="categoria">Categoría</label>
+            <select id="categoria">
+                <option value="">Selecciona la categoría</option>
+                <option value="electronica">Electrónica</option>
+                <option value="ropamj">Ropa Mujer</option>
+                <option value="ropahb">Ropa Hombre</option>
+                <option value="hogar">Hogar</option>
+                <option value="juguetes">Juguetes</option>
+                <option value="otros">Otros</option>
+            </select>
+        </div>
+        <div class="input-group">
+           <label for="tipo">Tipo</label>
+           <select id="tipo">
+              <option value="todos">Todos</option>
+              <option value="producto">Producto</option>
+              <option value="articulo">Artículo</option>
+        </select>
+    </div>
+    <button onclick="aplicarFiltros()">Aplicar Filtros</button>
+</div>
+</div>
         <table id="product-table">
             <thead>
                 <tr>
@@ -26,35 +63,71 @@
                     <th>Tipo</th>
                     <th>Categoria</th>
                     <th>Precio</th>
-                    <th>Detalles</th>
                 </tr>
             </thead>
             <tbody>
-                <tr contenteditable="true">
-                    <td></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td><a href="detailUI.html">hoa</a></td>
+                <tr>
+                    <td>001</td>
+                    <td><a href="detailUI.html">Camisa de algodon</a></td>
+                    <td>Producto</td>
+                    <td>Ropa mujer</td>
+                    <td>$1.500</td>
                 </tr>
-                <tr contenteditable="true">
-                    <td></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td><a href="detailUI.html">hoa</a></td>
+                <tr>
+                    <td>002</td>
+                    <td><a href="detailUI.html">Peluche oso</a></td>
+                    <td>Articulo</td>
+                    <td>Juguetes</td>
+                    <td>$3.000</td>
                 </tr>
-                <tr contenteditable="true">
-                    <td></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td><a href="detailUI.html">hoa</a></td>
+                <tr>
+                    <td>003</td>
+                    <td><a href="detailUI.html">Cargador tipo C</a></td>
+                    <td>Articulo</td>
+                    <td>Otros</td>
+                    <td>$4.000</td>
                 </tr>
+                <tr>
+                    <td>004</td>
+                    <td><a href="detailUI.html">Pantalone Holgados</a></td>
+                    <td>Producto</td>
+                    <td>Ropa hombre</td>
+                    <td>$10.000</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="button" onclick="exportTableToExcel()">Descargar en Excel</button>
     <script src="script.js"></script>
-    <button class="button" onclick="exportTableToExcel()">Descargar en Excel</button>
+<footer class="footer">
+    <ul class="social-icon">
+        <li class="icon-elem">
+            <a href="" class="icon">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+        </li>
+        <li class="icon-elem">
+            <a href="" class="icon">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+        </li>
+        <li class="icon-elem">
+            <a href="" class="icon">
+                <ion-icon name="mail-outline"></ion-icon>
+            </a>
+        </li>
+    </ul> 
+    <ul class="menu">
+        <li class="menu-elem">
+            <a href="" class="menu-icon">Inicio</a>
+        </li>
+        <li class="menu-elem">
+            <a href="" class="menu-icon">Sobre Nosotros</a>
+        </li>
+        <li class="menu-elem">
+            <a href="" class="menu-icon">Contacto</a>
+        </li>
+    </ul>
+    <p class="text">@2024 | Todos los derechos reservados</p>
+</footer>
     </body>
 </html>
